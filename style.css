@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
 }
 .second_Background{
-    /* height: 1550px; */
     background: url(./img/Background3.png);
     background-repeat: no-repeat; 
     background-origin: padding-box;
@@ -28,7 +27,7 @@
     background-repeat: no-repeat, no-repeat;
 }
 
-ul li{
+.nav-bar-item{
     list-style-type: none;
     width: 54px;
     height: 24px;
@@ -129,7 +128,7 @@ ul li{
     background: rgba(255, 100, 174, 1);
     box-shadow: 0px 17px 22px 0px rgba(255, 237, 246, 1);
 }
-.textCutting_Pages{
+.textCutting_Pages1{
     padding-top: 150px;
     display: flex;
     justify-content: center;
@@ -312,6 +311,13 @@ ul li{
 }
 .img_WeRthebest{
     padding-top:50px;
+}
+.textCutting_Pages2{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 .theProExer{
     padding: 70px;
@@ -587,13 +593,51 @@ ul li{
     background: #FF64AE;
     box-shadow: 0px 17px 22px #FFEDF6;
 }
-.footer_R{
+.footer_Right{
+    padding: 70px;
+    padding-top: 230px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+.footer_Right h1{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF;
+    height: 60px;
+}
+.footer_dandi{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.footer_pages{
+    padding-right: 170px;
+}
+.footer_informations{
+    padding-left: 0px;
+}
+.footer_minilogo{
+    padding-top: 20px;
+}
+.footer_logo{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    width: 500px;
 }
-.footer_Nologo{
+.footer_inforLogo{
     padding-left: 40px;
 }
 .footer_Contact{
@@ -616,9 +660,87 @@ ul li{
 }
 .footer_Address p{
     padding-bottom: 5px;
+    color: #D7DBFF;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    font-style: italic;
+}
+.footer_Contact p{
+    font-style: italic;
+    color: #D7DBFF;
+    font-family: 'Poppins';
 }
 .footer_Mail p{
     padding-left: 30px;
     text-decoration: underline;
     font-style: italic;
+    color: #D7DBFF;
+    font-family: 'Poppins';
+}
+.footer_SocialMedia{
+    padding-left: 95px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+.footer_SocialMedia a{
+    padding-left: 65px;
+    width: 49px;
+    height: 49px;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-decoration: none;
+}
+.footer_nav-bar-item-pages {
+    padding-left: 10px;
+    list-style-type: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color:  #D7DBFF;
+}
+.footer_nav-bar-item-infors li{
+    list-style-type: none;
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color:  #D7DBFF;
+}
+.footer_nav-bar-item-infors i{
+    font-size: 7px;
+    padding-right: 10px;
+    font-weight: lighter;
+}
+.footer_nav-bar-item-pages i{
+    font-size: 7px;
+    padding-right: 10px;
+    font-weight: lighter;
+}
+.end p{
+    padding-right: 45px;
+    font-size: 17px;
+    font-family: 'Poppins';
+    color:  #D7DBFF;
+}
+.ending{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.footer_Background2 img{
+    padding-right: 60px;
+    float: right;
 }
