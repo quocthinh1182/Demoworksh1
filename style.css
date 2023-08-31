@@ -3,31 +3,49 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
-.header_Background{
+/* BACKGROUND */
+.header-bg{
     background-image: url(./img/Background1.png);
     background-size: 86%;
     background-repeat: no-repeat;
 }
-.second_Background{
+.beauty-consultation-bg{
     background: url(./img/Background3.png);
     background-repeat: no-repeat; 
     background-origin: padding-box;
     background-position: 100% 82%;
 }
-.third_Background{
+.contact-us-bg{
     background: url(./img/Background5.png);
     background-repeat: no-repeat; 
     background-origin: padding-box;
     background-position: 0% 84%;
 }
-.footer_Background2{
+.footer-bg{
     background-image: url(./img/Background6.png), url(./img/FooterEnd.png);  
-    background-position: top, bottom;  
+    background-position: bottom, bottom;  
     background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
 }
-
-.nav-bar-item{
+/* HEADER  */
+.header{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+    padding-bottom: 20px;
+}
+.header-nav-bar-item{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+.header-nav-bar-item{
     list-style-type: none;
     width: 54px;
     height: 24px;
@@ -40,27 +58,7 @@
     text-decoration: none;
     color: rgba(139, 139, 139, 1);
 }
-.container{
-        max-width: 1440px;  
-        margin:0 auto;
-}
-/* HEADER  */
-.header{
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-.logo{
-    padding-bottom: 20px;
-}
-.nav-bar-item{
-    display: flex;
-    list-style-type: none;
-    gap: 40px;
-    justify-content: center;
-    padding: 20px;
-}
-.btnContact{
+.btn-contact{
     padding: 20px;
     width: 175px;
     height: 60px;
@@ -75,30 +73,30 @@
     background: rgba(255, 100, 174, 1);
     border: 1px solid rgba(255, 100, 174, 1);
 }
-
-/* MAIN  */
-/* SECTION Clinic  */
-.clinic{
+/* SECTION CLINIC */
+.header-clinic{
     padding: 70px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
 }
-.slogan_Clinic{
+.header-slogan-clinic{
     padding-left: 20px;
     padding-bottom: 90px;
     display: flex;
+    font-family: 'Poppins';
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
     flex-wrap: nowrap;
     align-content: center;
+    color: #091156;
 }
 .clinic h1{
     padding-bottom: 10px;
     font-family: 'Poppins';
     font-size: 45px;
-    font-weight: 600;
+    font-weight: bold;
     line-height: 54px;
     letter-spacing: 0.01em;
     text-align: left;
@@ -114,7 +112,7 @@
     letter-spacing: 0.1em;
     color: rgba(9, 17, 86, 1);
 }
-.btnMoreDetails{
+.btn-more-details{
     width: 175px;
     height: 58px;
     border-radius: 50px;
@@ -128,13 +126,20 @@
     background: rgba(255, 100, 174, 1);
     box-shadow: 0px 17px 22px 0px rgba(255, 237, 246, 1);
 }
-.textCutting_Pages1{
+/* CONTAINER */
+/* .container{
+        max-width: 1440px;  
+        margin:0 auto;
+} */
+/* SECTION Clinic  */
+
+.text-mainservices{
     padding-top: 150px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 }
-.textCutting_Pagesed h2{
+.text-mainservices h2{
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 600;
@@ -143,7 +148,7 @@
     text-align: center;
     color: #FF64AE;
 }
-.textCutting_Pagesed h1{
+.text-mainservices h1{
     padding: 20px;
     font-family: 'Poppins';
     font-size: 36px;
@@ -153,7 +158,7 @@
     text-align: center;
     color: #091156;
 }
-.textCutting_Pagesed p {
+.text-mainservices p{
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
@@ -162,21 +167,21 @@
     text-align: center;
     color: #8B8B8B;
 }
-.beautyX2_Skin{
+.beauty-consultation-skin-treatments-beauty-product{
     padding-top: 90px;
     padding: 70px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
 }
-.beauty_consultation{
+.beauty-consultation{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
 }
-.beauty_consultation{
+.beauty-consultation{
     width: 343px;
     height: 458px;
     border-radius: 42px;
@@ -184,14 +189,14 @@
     background: #ffffff;
     box-shadow: 0px 25px 50px 25px #F6F7FF; 
 }
-.skin_treatments{
+.skin-treatments{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
 }
-.skin_treatments{
+.skin-treatments{
     width: 343px;
     height: 458px;
     border-radius: 42px;
@@ -199,14 +204,14 @@
     color: #FFFFFF;
     box-shadow: 0px 25px 50px 25px #F6F7FF; 
 }
-.beauty_product{
+.beauty-product{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
 }
-.beauty_product{
+.beauty-product{
     width: 343px;
     height: 458px;
     border-radius: 42px;
@@ -214,7 +219,7 @@
     background: #ffffff;
     box-shadow: 0px 25px 50px 25px #F6F7FF;  
 }
-.beauty_consultation h1, .skin_treatments h1, .beauty_product h1{
+.beauty-consultation h1, .skin-treatments h1, .beauty-product h1{
     font-family: 'Poppins';
     font-size: 18px;
     font-weight: 600;
@@ -223,7 +228,7 @@
     color: #091156;
     text-align: center;
 }
-.beauty_consultation p, .skin_treatments p, .beauty_product p{
+.beauty-consultation p, .skin-treatments p, .beauty-product p{
     font-family: 'Poppins';
     font-size: 14px;
     font-weight: 400;
@@ -232,22 +237,23 @@
     color: #8B8B8B;
     text-align: center;
 }
-.weRtheBest{
+.we-are-the-best{
+    padding: 70px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
 }
-.text_WeRtheBest{
+.we-are-the-best-content{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: flex-start;
     align-items: flex-start;
 }
-.text_WeRtheBest h2{
+.we-are-the-best-content h2{
     padding-top: 50px;
     font-family: 'Poppins';
     font-size: 16px;
@@ -257,7 +263,8 @@
     text-align: left;
     color: #FF64AE;
 }
-.text_WeRtheBest h1{
+.we-are-the-best-content h1{
+    width: 600px;
     padding-top: 10px;
     padding-bottom: 15px;
     font-family:'Poppins';
@@ -268,18 +275,16 @@
     text-align: left;
     color: #091156;
 }
-.text_WeRtheBest p{
-    padding-bottom: 20px;
+.we-are-the-best-content p{
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
     letter-spacing: 0.1em;
     text-align: left;
     color: #8B8B8B;
 }
-.learnMore_WatchVideo{
-    padding: 30px;
+.btn-learn-more-btn-watch-video{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -287,15 +292,15 @@
     align-content: center;
     align-items: center;
 }
-.learnMore_WatchVideo p{
-    padding-left: 10px;
+.btn-learn-more-btn-watch-video p{
+    padding-left: 15px;
     padding-top: 20x;
-    padding-bottom: 2px;
+    margin: 20px;
 }
-.learnMore_WatchVideo img{
+.btn-learn-more-btn-watch-video img{
     padding-left: 50px;
 }
-.btnLearnMore{
+.btn-learn-more{
     width: 175px;
     height: 58px;
     border-radius: 50px;
@@ -309,31 +314,58 @@
     background: rgba(255, 100, 174, 1);
     box-shadow: 0px 17px 22px 0px rgba(255, 237, 246, 1);
 }
-.img_WeRthebest{
+.we-are-the-best-picture{
     padding-top:50px;
 }
-.textCutting_Pages2{
-    padding-top: 50px;
+.text-professional-team{
     padding-bottom: 25px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 }
-.theProExer{
+.text-professional-team h2{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF64AE;
+}
+.text-professional-team h1{
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #091156;
+}
+.text-professional-team p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #8B8B8B;
+}
+.the-professional-content{
     padding: 70px;
     padding-top: 70px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
 }
-.briyan_Nevalli{
+.briyan-nevalli{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
 }
-.briyan_Nevalli{
+.briyan-nevalli{
     width: 424px;
     height: 626px;
     border-radius: 42px;
@@ -341,18 +373,18 @@
     background: #ffffff;
     box-shadow: 0px 25px 50px 25px #F6F7FF; 
 }
-.briyan_Nevalli img{
+.briyan-nevalli img{
     padding-top: 100px;
     padding-bottom: 60px;
 }
-.bella_Sebastian{
+.bella-sebastian{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
 }
-.bella_Sebastian{
+.bella-sebastian{
     width: 424px;
     height: 626px;
     border-radius: 42px;
@@ -360,18 +392,18 @@
     background: #ffffff;
     box-shadow: 0px 25px 50px 25px #F6F7FF; 
 }
-.bella_Sebastian img{
+.bella-sebastian img{
     padding-top: 100px;
     padding-bottom: 60px;
 }
-.lilly_Adams{
+.lilly-adams{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
 }
-.lilly_Adams{
+.lilly-adams{
     width: 424px;
     height: 626px;
     border-radius: 42px;
@@ -379,11 +411,11 @@
     background: #ffffff;
     box-shadow: 0px 25px 50px 25px #F6F7FF; 
 }
-.lilly_Adams img{
+.lilly-adams img{
     padding-top: 100px;
     padding-bottom: 60px;
 }
-.briyan_Nevalli h2, .bella_Sebastian h2, .lilly_Adams h2 {
+.briyan-nevalli h2, .bella-sebastian h2, .lilly-adams h2 {
     padding-bottom: 20px;
     font-family: 'Poppins';
     font-size: 18px;
@@ -392,7 +424,7 @@
     letter-spacing: 0em;
     color: #FF64AE;
 }
-.briyan_Nevalli h1, .bella_Sebastian h1, .lilly_Adams h1{
+.briyan-nevalli h1, .bella-sebastian h1, .lilly-adams h1{
     padding-bottom: 30px;
     font-family: 'Poppins';
     font-size: 18px;
@@ -402,7 +434,7 @@
     color: #091156;
     text-align: center;
 }
-.briyan_Nevalli p, .bella_Sebastian p, .lilly_Adams p{
+.briyan-nevalli p, .bella-sebastian p, .lilly-adams p{
     padding-bottom: 40px;
     font-family: 'Poppins';
     font-size: 14px;
@@ -412,68 +444,63 @@
     color: #8B8B8B;
     text-align: center;
 }
-.SocialMediabc{
+.social-media-content{
     display: inline-flex;
     justify-content: center;
     align-content: center;
 }
-.SocialMedia a {
-    padding-top: 9px;
-    padding-left: 7px;
+.bxl-twitch{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+.bxl-facebook{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+.bxl-instagram{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+.bxl-twitch a{
+    padding-left: 4px;
     width: 49px;
     height: 49px;
     background: transparent;
     border: 2px solid #FFFFFF;
     color: #091156;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
     box-shadow: -2px 6px 16px -1px #E6E9FD;
 }
-.SocialMedia{
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-}
-.SocialMedib a {
-    padding-top: 9px;
-    padding-left: 7px;
+.bxl-facebook a{
+    padding-left: 2px;
     width: 49px;
     height: 49px;
     background: transparent;
     border: 2px solid #FFFFFF;
     color: #091156;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
     box-shadow: -2px 6px 16px -1px #E6E9FD;
 }
-.SocialMedib{
-    padding-left: 30px;
-    padding-right: 30px;
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-}
-.SocialMedic a {
-    padding-top: 9px;
-    padding-left: 7px;
-    width: 49px;
+.bxl-instagram a{
+    padding-left: 2px;
     height: 49px;
     background: transparent;
     border: 2px solid #FFFFFF;
     color: #091156;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
     box-shadow: -2px 6px 16px -1px #E6E9FD;
 }
-.SocialMedic{
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-}
-.contactUs{
+.contact-us{
+    padding: 70px;
     padding-top: 100px;
     display: flex;
     justify-content: space-evenly;
@@ -481,16 +508,16 @@
     align-content: space-between;
     align-items: center;
 }
-.contactUs img{
+.contact-us img{
     padding-top: 100px;
 }
-.intro_ContactUs{
+.introduce-form-contact-us{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
 }
-.intro_ContactUs h2{
+.introduce-form-contact-us h2{
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 600;
@@ -499,7 +526,7 @@
     text-align: left;
     color: #FF64AE;
 }
-.intro_ContactUs h1{
+.introduce-form-contact-us h1{
     padding-top: 15px;
     font-family: 'Poppins';
     font-style: normal;
@@ -509,7 +536,7 @@
     text-align: left;
     color: #091156;
 }
-.intro_ContactUs p{
+.introduce-form-contact-us p{
     padding-top: 20px;
     font-family: 'Poppins';
     font-style: normal;
@@ -520,16 +547,16 @@
     text-align: left;
     color: #8B8B8B;
 }
-.form_ContactUs{
+.content-form-contact-us{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
 }
-.form_ContactUs input{
+.content-form-contact-us input{
     padding-left: 20px;
 }
-.form_Name{
+.form-name{
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
@@ -537,17 +564,17 @@
     flex-direction: row;
     align-items: flex-start;
 }
-.form_L4stName{
+.form-last-name{
     padding-left: 35px;
 }
-.form_Subj3ct{
+.form-subject-message{
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.form_1nquiry{
+.form-your-inquiry{
     padding-bottom: 50px;
 }
-.form_FirstName, .form_LastName{
+.textbox-form-first-name, .textbox-form-last-name{
     box-sizing: border-box;
     font-family: 'Poppins';
     width: 242.21px;
@@ -556,12 +583,12 @@
     border: 1px solid #D9DDFE;
     border-radius: 15px;
 }
-.form_ContactUs ::placeholder{
+.content-form-contact-us ::placeholder{
     font-size: 16px;
     color: #C5C5C5;
 
 }
-.form_Email, .form_Subject{
+.textbox-form-email-address, .textbox-form-subject-message{
     width: 520px;
     height: 61.58px;
     font-family: 'Poppins';
@@ -569,7 +596,7 @@
     border: 1px solid #D9DDFE;
     border-radius: 15px;
 }
-.form_Inquiry{
+.texrbox-form-your-inquiry{
     padding-bottom: 170px;
     box-sizing: border-box;
     font-family: 'Poppins';
@@ -579,7 +606,7 @@
     border: 1px solid #D9DDFE;
     border-radius: 15px;
 }
-.btnSendMessage{
+.btn-send-message{
     width: 248px;
     height: 58px;
     border-radius: 50px;
@@ -593,18 +620,17 @@
     background: #FF64AE;
     box-shadow: 0px 17px 22px #FFEDF6;
 }
-.footer_Right{
+.footer-logo-content{
     padding: 70px;
-    padding-top: 230px;
-    padding-bottom: 75px;
+    padding-top: 200px;
+    padding-bottom: 65px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    align-content: center;
-    
+    align-content: center; 
 }
-.footer_Right h1{
+.footer-logo-content h1{
     font-family: 'Poppins';
     font-size: 18px;
     font-weight: 600;
@@ -614,40 +640,21 @@
     color: #FFFFFF;
     height: 60px;
 }
-.footer_dandi{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    align-content: center;
-}
-.footer_pages{
-    padding-right: 170px;
-}
-.footer_informations{
-    padding-left: 0px;
-}
-.footer_minilogo{
-    padding-top: 20px;
-}
-.footer_logo{
+.footer-logo{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     width: 500px;
 }
-.footer_inforLogo{
+.footer_mini-logo{
+    padding-top: 20px;
+}
+.footer-logo-items{
     padding-left: 40px;
 }
-.footer_Contact{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-.footer_Beautice p{
-    padding-top: 10px;
+.footer-beautice p{
+    padding-top: 40px;
     padding-bottom: 10px;
     font-family: 'Poppins';
     font-style: normal;
@@ -658,41 +665,50 @@
     color: #D7DBFF;
     letter-spacing: 0.1em;
 }
-.footer_Address p{
+.footer-address p{
     padding-bottom: 5px;
     color: #D7DBFF;
     font-family: 'Poppins';
     font-weight: lighter;
     font-style: italic;
 }
-.footer_Contact p{
+.footer-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer-contact p{
     font-style: italic;
     color: #D7DBFF;
     font-family: 'Poppins';
 }
-.footer_Mail p{
+.footer-mail p{
     padding-left: 30px;
     text-decoration: underline;
     font-style: italic;
     color: #D7DBFF;
     font-family: 'Poppins';
 }
-.footer_SocialMedia{
-    padding-left: 95px;
-    display: inline-flex;
-    justify-content: center;
+.footer-items-pages-and-information{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
     align-content: center;
 }
-.footer_SocialMedia a{
-    padding-left: 65px;
-    width: 49px;
-    height: 49px;
-    background: transparent;
-    color: #FFFFFF;
-    font-size: 30px;
-    text-decoration: none;
+.footer-pages{
+    padding-right: 170px;
 }
-.footer_nav-bar-item-pages {
+.footer-informations{
+    padding-left: 0px;
+}
+.footer-nav-bar-item-infors i{
+    font-size: 7px;
+    padding-right: 10px;
+    font-weight: lighter;
+}
+.footer-nav-bar-item-pages li{
     padding-left: 10px;
     list-style-type: none;
     font-family: 'Poppins';
@@ -704,7 +720,12 @@
     text-decoration: none;
     color:  #D7DBFF;
 }
-.footer_nav-bar-item-infors li{
+.foote-nav-bar-item-pages i{
+    font-size: 7px;
+    padding-right: 10px;
+    font-weight: lighter;
+}
+.footer-nav-bar-item-infors li{
     list-style-type: none;
     font-family: 'Poppins';
     text-align: left;
@@ -715,23 +736,14 @@
     text-decoration: none;
     color:  #D7DBFF;
 }
-.footer_nav-bar-item-infors i{
-    font-size: 7px;
-    padding-right: 10px;
-    font-weight: lighter;
+.footer-social-media{
+    padding-left: 55px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    display: flex;
 }
-.footer_nav-bar-item-pages i{
-    font-size: 7px;
-    padding-right: 10px;
-    font-weight: lighter;
-}
-.end p{
-    padding-right: 45px;
-    font-size: 17px;
-    font-family: 'Poppins';
-    color:  #D7DBFF;
-}
-.ending{
+.social-media-ending{
     padding-top: 70px;
     padding-bottom: 70px;
     display: flex;
@@ -740,7 +752,24 @@
     flex-direction: row;
     align-items: center;
 }
-.footer_Background2 img{
+.social-media-ending a{
+    padding-left: 65px;
+    width: 49px;
+    height: 49px;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-decoration: none;
+}
+.end p{
+    padding-right: 45px;
+    font-size: 17px;
+    font-family: 'Poppins';
+    color:  #D7DBFF;
+}
+.footer-bg img{
     padding-right: 60px;
     float: right;
 }
+
+
