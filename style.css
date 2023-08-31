@@ -73,6 +73,10 @@
     background: rgba(255, 100, 174, 1);
     border: 1px solid rgba(255, 100, 174, 1);
 }
+.btn-contact:hover{
+    background-color: #FFFFFF;
+    color: #FF64AE;
+}
 /* SECTION CLINIC */
 .header-clinic{
     padding: 70px;
@@ -125,6 +129,11 @@
     border: 1px solid rgba(255, 100, 174, 1);
     background: rgba(255, 100, 174, 1);
     box-shadow: 0px 17px 22px 0px rgba(255, 237, 246, 1);
+}
+
+.btn-more-details:hover{
+    background-color: #FFFFFF;
+    color: #FF64AE;
 }
 /* CONTAINER */
 /* .container{
@@ -314,6 +323,10 @@
     background: rgba(255, 100, 174, 1);
     box-shadow: 0px 17px 22px 0px rgba(255, 237, 246, 1);
 }
+.btn-learn-more:hover{
+    background-color: #FFFFFF;
+    color: #FF64AE;
+}
 .we-are-the-best-picture{
     padding-top:50px;
 }
@@ -424,6 +437,15 @@
     letter-spacing: 0em;
     color: #FF64AE;
 }
+.briyan-nevalli h2:hover{
+    color: #d500fb;
+} 
+.bella-sebastian h2:hover{
+    color: #d500fb;
+}
+.lilly-adams h2:hover{
+    color: #d500fb;
+}
 .briyan-nevalli h1, .bella-sebastian h1, .lilly-adams h1{
     padding-bottom: 30px;
     font-family: 'Poppins';
@@ -498,6 +520,15 @@
     font-size: 40px;
     text-decoration: none;
     box-shadow: -2px 6px 16px -1px #E6E9FD;
+}
+.bxl-twitch i:hover{
+    color: #1773ea;
+}
+.bxl-facebook i:hover{
+    color: #1197f5;
+}
+.bxl-instagram i:hover{
+    color: #f07725;
 }
 .contact-us{
     padding: 70px;
@@ -620,6 +651,10 @@
     background: #FF64AE;
     box-shadow: 0px 17px 22px #FFEDF6;
 }
+.btn-send-message:hover{
+    background-color: #FFFFFF;
+    color: #FF64AE;
+}
 .footer-logo-content{
     padding: 70px;
     padding-top: 200px;
@@ -703,7 +738,7 @@
 .footer-informations{
     padding-left: 0px;
 }
-.footer-nav-bar-item-infors i{
+.footer-nav-bar-item-pages i{
     font-size: 7px;
     padding-right: 10px;
     font-weight: lighter;
@@ -720,7 +755,7 @@
     text-decoration: none;
     color:  #D7DBFF;
 }
-.foote-nav-bar-item-pages i{
+.footer-nav-bar-item-infors i{
     font-size: 7px;
     padding-right: 10px;
     font-weight: lighter;
@@ -746,20 +781,30 @@
 .social-media-ending{
     padding-top: 70px;
     padding-bottom: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-direction: row;
-    align-items: center;
+    padding-left: 20px;
 }
 .social-media-ending a{
-    padding-left: 65px;
+    padding-left: 33px;
     width: 49px;
     height: 49px;
-    background: transparent;
     color: #FFFFFF;
     font-size: 30px;
     text-decoration: none;
+}
+.hover-footer-facebook:hover {
+    color: #1197f5 !important;
+}
+.hover-footer-twitter:hover{
+    color: #1773ea !important;
+}
+.hover-footer-facebook:hover{
+    color: #0a66c2 !important;
+}
+.hover-footer-youtube:hover{
+    color: #ff0000 !important;
+}
+.hover-footer-instagram:hover{
+    color: #f07725 !important;
 }
 .end p{
     padding-right: 45px;
